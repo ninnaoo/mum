@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>for irina</title>
+  <link rel="icon" type="image/png" href="static/lotosicon.png">
+  <link rel="stylesheet" href="static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Загрузочный экран -->
+<div id="loading">
+  <p>загружается..</p>
+</div>
+<div id="loadingOverlay">
+ <p>mini jump-game :3</p>
+  <button id="startBtn">начать</button>
+</div>
+
+<!-- Оверлей ориентации -->
+<div id="rotateOverlay">
+  <p>пожалуйста, поверните телефон в горизонтальное положение</p>
+</div>
+
+<!-- Контейнер игры -->
+<div id="gameContainer" style="display:none;">
+  <div id="game">
+    <div id="player">
+      <img src="static/doll.png">
+    </div>
+    <div id="score"> пройдено: 0</div>
+    <div id="message" style="display:none;">
+      <p id="messageText"></p>
+      <button id="restartBtn" style="display:none;">начать сначала</button>
+    </div>
+  </div>
+  <audio id="bgMusic" src="static/music.mp3" autoplay loop muted></audio>
+</div>
+
+<script src="static/script.js"></script>
+</body>
+</html>
+
